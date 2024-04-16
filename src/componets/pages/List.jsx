@@ -23,6 +23,15 @@ useEffect(()=>{
 },[]) 
 
 
+
+/* const handleDelete = async(e)=>{
+  e.preventDefault()
+  const result = await axios.delete(`${BASE_URL}/detail/delete/register`)
+  console.log(result);
+
+}
+ */
+//const result = await axios.put(`${BASE_URL}/detail/edit`,)
 console.log(searchKey);
 
 
@@ -49,7 +58,8 @@ console.log(searchKey);
             <th>Date</th>
             <th>Place</th>
             <th>Gender</th>
-
+{/*            <th>delete</th>
+ */}
         </tr>
     </thead>
     <tbody >
@@ -64,7 +74,8 @@ console.log(searchKey);
     <td>{data.place}</td>
     <td>{data.date}</td>
     <td>{data.gender}</td>
-     </tr> ))} 
+ {/*  <button onClick={handleDelete}><i class="fa-solid fa-trash"></i></button>  
+   */}   </tr> ))} 
     </tbody>
   </table> 
 

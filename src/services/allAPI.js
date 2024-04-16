@@ -25,3 +25,11 @@ export const adminRegisterAPI = async(admins)=>{
   return await commonAPI('POST',`${BASE_URL}/admin/login`,admins,"")
 
 } 
+/* 
+//edit 
+export const deleteUserAPI= async(userId)=>{
+  return await commonAPI('DELETE',`${BASE_URL}/detail/delete/${userId}`)
+
+}   */
+ 
+

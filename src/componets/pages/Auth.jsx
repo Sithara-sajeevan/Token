@@ -171,7 +171,7 @@ function Auth({ register  }) {
                   </div>
                 }
                  <div >
-                  <p style={{color:'black'}}>are u an <Link to={'/admin'}>Admin</Link> </p>
+                  <p style={{color:'black'}}>Are u an <Link to={'/admin'} style={{textDecoration:'none'}}>Admin?</Link> </p>
                  <Link to={'/'}><button className='btn  '>Back  To Home</button>
                 </Link>
                     </div>

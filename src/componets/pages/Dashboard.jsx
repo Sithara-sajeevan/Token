@@ -77,10 +77,7 @@ function Dashboard() {
 
 
       console.log(personalDetails);
-      /*  if(personalImage!=='image/png' || personalImage!=='image/jpg' || personalImage!=='image/jpge')
-      {
-       alert('only png are alowed')
-      }  */
+ 
       if (token) {
         const reqHeader =
         {
@@ -132,8 +129,8 @@ function Dashboard() {
             <input id='upload' type="file" style={{ display: 'none' }} onChange={(e) => setPersonalDetails({ ...personalDetails, personalImage: e.target.files[0] })} />
             <img className='img-fluid' src={preview ? preview : "https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-cartoon-man-avatar-vector-ilustration-png-image_6111064.png"} alt="" width={'100px'} />
           </label>
-          <h6>Png Image</h6>
-
+{/*           <h6>Png Image</h6>
+ */}
 
           <Form className='mt-5' padding='20px'>
             <Row>
